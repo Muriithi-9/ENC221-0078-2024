@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+class Roommate {
+    private:
+        // Attributes
+        std::string name;
+        int age;
+        std::string school;
+        std::string course;
+    public:
+        // Constructor
+        Roommate(std::string n, int a, std::string s, std::string c)
+            : name(n), age(a), school(s), course(c) {}
+        // Methods
+        void introduce() {
+            std::cout << "My roommate's name is " << name << ". She is " << age << " years old studying " << course << " at " << school << ".\n";
+        }
+};
+    int main() {
+        Roommate abby("Abby Kiumbe", 20, "JKUAT", "GIS");
+        abby.introduce();
+        return 0;
