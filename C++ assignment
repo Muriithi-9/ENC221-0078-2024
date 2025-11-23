@@ -21,3 +21,4 @@ class Roommate {
         Roommate abby("Abby Kiumbe", 20, "JKUAT", "GIS");
         abby.introduce();
         return 0;
+    }
